@@ -2,6 +2,9 @@
 
 /**
  * Basic enumerated type.
+ * 
+ * Implemented in ES2015, with a Babel-generated
+ * version that downshifts to older ES5 idioms.
  */
 
 class Enum {

@@ -37,10 +37,15 @@ to make sure my resulting program was simplified and made more reliable. And I
 didn't care about the `color.RED` attribute style of access many enum packages
 seem to favor.
 
-This was, in other words, a top-down requirement driven by a specific need, not
-a bottoms-up or synethetic "I know! Let's make up an enum type!" effort.
+This was, in other words, a: top-down requirement driven by a specific need, not
+a bottoms-up or synthetic "I know! Let's make up an enum type!" effort.
 Different use, subtly but valuably different API style and virtues.
 
 I also wanted to be sure it was well-tested for the specific use cases I had.
 It's not a complex project like building your own XML parser, so it's
 manageable.
+
+Finally, I'd primarily been using `function`-style "classes" in
+JavaScript, and wanted a chance to more fully and
+explicitly use the new ES2015 official `class` and
+property getter/setter syntax.

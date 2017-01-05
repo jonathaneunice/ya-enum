@@ -1,6 +1,16 @@
 var assert = require('chai').assert;
 
-var Enum = require('../enum');
+var Enum;
+
+// Test both ES2015 base code and ES5 generated code
+['enum', 'enum.es5'].forEach(ver => {
+  describe(ver + '.js', function() {
+    Enum = require('../' + ver);
+    test_enum();
+  });
+});
+
+function test_enum() {
 
 describe('enum', function() {
 
@@ -70,3 +80,5 @@ describe('enum', function() {
   });
 
 });
+
+}
