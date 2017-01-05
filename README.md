@@ -3,22 +3,23 @@
 `Enum` keeps a fixed list of values (usually strings,
 but could be other data types) to integer
 indices. It acts like a list plus
-a current index into the last, a common
+a current index into the list, a common
 pattern in developing user
-interfaces and other programs.
-
+interfaces (among other programs).
 
 ### Usage Example
 
 ```javascript
+const Enum = require('ya-enum');
+
 foods = Enum(['fish', 'meat', 'apples']);
-foods.value = 'meat'
+foods.value = 'meat';
 // foods.index now 2
-foods.index = 2
+foods.index = 2;
 // foods.value now 'apples'
 ```
 
-### Why Yet Another Enum Package
+### Why Yet Another Enum Package?
 
 In languages like JavaScript, Perl, and Python that
 "grew up" without an official enumerated

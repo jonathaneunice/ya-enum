@@ -1,5 +1,5 @@
 {
-  "name": "yaenum",
+  "name": "ya-enum",
   "version": "1.0.0",
   "description": "Yet another enumerated type",
   "main": "enum.js",
@@ -11,9 +11,13 @@
     "babel-watch": "babel --watch enum.js --out-file enum.es5.js",
     "test": "mocha"
   },
-  "keywords": [],
+  "keywords": ["enum", "enumerated", "enumeration" ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathaneunice/ya-enum"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
